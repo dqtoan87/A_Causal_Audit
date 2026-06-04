@@ -4,17 +4,17 @@ Reference implementation for the paper *"There Is No Universal Spurious/Causal
 Partition: A Causal Audit of Counterfactual-Invariance Regularization in
 Multimodal Dermatology."*
 
-> **Giới thiệu (tóm tắt).** Dự án này cài đặt một **Structural Causal Model
-> (SCM) trong không gian đặc trưng** được *khớp thật bằng maximum likelihood*
-> (cơ chế location-scale additive-noise), cho phép suy luận phản thực
-> *abduction–action–prediction* của Pearl trên metadata nhân khẩu (tuổi, giới,
-> vị trí tổn thương). Dùng cơ chế đó, ta **audit** bộ điều chuẩn
-> *counterfactual-invariance* `L_cf` qua bốn cách phân vùng tập "spurious"
-> `M_sp`, 10 seed, và bốn cohort da liễu. Kết quả chính: cùng một bộ điều chuẩn
-> bất biến theo *tuổi* lại **giúp** độ nhạy melanoma trên Fitzpatrick17k nhưng
-> **hại** trên PAD-UFES-20 — tức không tồn tại một phân vùng spurious/causal
-> phổ quát. Thư mục này chỉ chứa **mã nguồn huấn luyện và đánh giá**
-> (không bao gồm mã dựng bảng/hình/bản thảo của bài báo).
+> **Summary.** This project implements a **feature-space Structural Causal Model
+> (SCM)** that is *genuinely fit by maximum likelihood* (a location-scale
+> additive-noise mechanism), enabling exact *abduction–action–prediction*
+> counterfactuals (Pearl) on demographic metadata (age, sex, lesion location).
+> Using that mechanism, it **audits** the *counterfactual-invariance*
+> regularizer `L_cf` across four partitions of the "spurious" set `M_sp`, ten
+> seeds, and four dermatology cohorts. Headline result: the *same* age-invariance
+> regularizer **helps** melanoma sensitivity on Fitzpatrick17k but **harms** it
+> on PAD-UFES-20 — i.e. there is no universal spurious/causal partition. This
+> directory contains **training and evaluation source code only** (it does not
+> include the scripts that build the paper's tables/figures or the manuscript).
 
 ---
 
